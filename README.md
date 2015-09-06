@@ -10,4 +10,9 @@ The direction of solving:
     + Based on matched pair of keypoints, we estimate the homography matrix used for tranforming a coordinate on map into a correspondent coordinate on the map captured from camera. The method of estimating this homography matrix is running RANSAC algorithm on a list of pair matched keypoints which are collected from SIFT matching.
     + By a simple geomtry tranformation with the homography matrix, we easily synchronize every point on the map of screen with every point on the map captured from cameraw
 # Background subtraction:
+The purpose: Recognize the hand or pointing device appear on the camera for recognizing the control gestures of the user.
+The direction of solving:
+  - Observation: to recognize the pointing gestures, the system is required to distinguish between the static scene on the camera (background) and pointing gestures (foreground). Therefore, background subtraction is next problem for the system.
+  - Solution:
+    + Pham truong an
 # Pointing Tip Detection:
