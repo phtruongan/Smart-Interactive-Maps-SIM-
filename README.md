@@ -15,5 +15,6 @@ The purpose: Recognize the hand or pointing device appear on the camera for reco
 The direction of solving:
   - Observation: to recognize the pointing gestures, the system is required to distinguish between the static scene on the camera (background) and pointing gestures (foreground). Therefore, background subtraction is next problem for the system.
   - Solution:
-    + Pham truong an
+    + Based on the small variation of RGB values of a pixel and gradual change of environment, we can solve this problem by using codebook method for subtracting the background - Reference: "Background modeling and subtraction by codebook construction", authors: Kyungnam Kim et al.
+    + Codebook of each pixel which contains several codewords: contains RGB information of the pixel and 6-tuple (minimum brightness, maximum brightness, frequency, longest interval in which this codeword, first access, last access) will be trained through sequence of training images. 
 # Pointing Tip Detection:
